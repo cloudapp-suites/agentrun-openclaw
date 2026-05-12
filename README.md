@@ -96,7 +96,7 @@ git clone git@github.com:cloudapp-suites/agentrun-openclaw.git
 部署之前，**必须**先填写 LLM 接入密钥。编辑下面这个文件：
 
 ```
-charts/openclaw-agent/examples/values-aliyun.yaml
+examples/values-aliyun.yaml
 ```
 
 将其中的 `observability.vllmApiKey` 从占位值改成老师下发的真实密钥：
@@ -116,7 +116,7 @@ observability:
 打开文件：
 
 ```
-charts/openclaw-agent/config/agentrun.config
+config/agentrun.config
 ```
 
 找到 `clusters[0].cluster.server` 这一行：
